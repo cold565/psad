@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1">
+    <mxGraphModel dx="1420" dy="901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" value="" style="group" vertex="1" connectable="0">
+          <mxGeometry x="0" y="0" width="100%" height="100%" as="geometry"/>
+        </mxCell>
+        <mxCell id="1" value="LoginWindow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;rounded=1;shadow=0;glass=0;whiteSpace=wrap;html=1" vertex="1" connectable="1">
+          <mxGeometry x="150" y="100" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="2" value="MainWindow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;rounded=1;shadow=0;glass=0;whiteSpace=wrap;html=1" vertex="1" connectable="1">
+          <mxGeometry x="350" y="100" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Document" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;rounded=1;shadow=0;glass=0;whiteSpace=wrap;html=1" vertex="1" connectable="1">
+          <mxGeometry x="350" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Comment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;rounded=1;shadow=0;glass=0;whiteSpace=wrap;html=1" vertex="1" connectable="1">
+          <mxGeometry x="550" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="ActivityLog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;rounded=1;shadow=0;glass=0;whiteSpace=wrap;html=1" vertex="1" connectable="1">
+          <mxGeometry x="550" y="300" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="Database" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;rounded=1;shadow=0;glass=0;whiteSpace=wrap;html=1" vertex="1" connectable="1">
+          <mxGeometry x="750" y="300" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonal=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0" edge="1" parent="0" source="1" target="2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonal=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0" edge="1" parent="0" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="Connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonal=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0" edge="1" parent="0" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="Connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonal=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0" edge="1" parent="0" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonal=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0" edge="1" parent="0" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

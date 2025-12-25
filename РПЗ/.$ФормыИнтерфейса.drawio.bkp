@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2025-12-24T19:12:31.827Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="bdzDpph6G30cKmsBBoQQ" version="24.2.5" type="device">
+  <diagram name="Страница — 1" id="LFw3HlZ5v1dGkTZaKNl4">
+    <mxGraphModel dx="1221" dy="823" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="2336" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-2" value="Форма Авторизации" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;startSize=51;" vertex="1" parent="1">
+          <mxGeometry x="125" y="92" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-8" value="&lt;font color=&quot;#000000&quot;&gt;Логин&amp;nbsp; &amp;nbsp; [_______]&lt;br&gt;Пароль&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;[_______]&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="prNrV24Wx6QdeM9nP8rq-2">
+          <mxGeometry x="15" y="62" width="117" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-10" value="&lt;font color=&quot;#000000&quot;&gt;[Вход]&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="prNrV24Wx6QdeM9nP8rq-2">
+          <mxGeometry x="47.5" y="104" width="52" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-3" value="Форма работы с комментариями" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;startSize=47;" vertex="1" parent="1">
+          <mxGeometry x="698" y="92" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-12" value="&lt;font color=&quot;#000000&quot;&gt;Комментарий [______]&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;[Добавить][Удалить]&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;[Посмотреть]&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="prNrV24Wx6QdeM9nP8rq-3">
+          <mxGeometry x="23" y="69" width="144" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-4" value="Форма работы с документами" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;startSize=49;" vertex="1" parent="1">
+          <mxGeometry x="406" y="92" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-11" value="&lt;font color=&quot;#000000&quot;&gt;Поиск&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;[_______]&lt;/span&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;[Открыть][Удалить]&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;[Обновить][Загрузить]&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="prNrV24Wx6QdeM9nP8rq-4">
+          <mxGeometry x="24" y="69" width="140" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-5" value="Форма для просмотра журнала действий" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;startSize=64;" vertex="1" parent="1">
+          <mxGeometry x="125" y="392" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-6" value="Форма для управления пользователями" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;startSize=61;" vertex="1" parent="1">
+          <mxGeometry x="415" y="392" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-14" value="&lt;font color=&quot;#000000&quot;&gt;[Таблица с пользователями]&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;[Добавить][Удалить]&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="prNrV24Wx6QdeM9nP8rq-6">
+          <mxGeometry x="3.5" y="79.5" width="175" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-13" value="&lt;font color=&quot;#000000&quot;&gt;[Таблица с действиями]&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;[Очистить]&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="144" y="465" width="151" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-18" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="prNrV24Wx6QdeM9nP8rq-5" target="prNrV24Wx6QdeM9nP8rq-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="255" y="422" as="sourcePoint" />
+            <mxPoint x="255" y="322" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-19" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.447;exitY=0;exitDx=0;exitDy=0;fillColor=#f5f5f5;strokeColor=#666666;exitPerimeter=0;" edge="1" parent="1" source="prNrV24Wx6QdeM9nP8rq-6" target="prNrV24Wx6QdeM9nP8rq-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="265" y="432" as="sourcePoint" />
+            <mxPoint x="265" y="332" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-20" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="prNrV24Wx6QdeM9nP8rq-3" target="prNrV24Wx6QdeM9nP8rq-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="275" y="442" as="sourcePoint" />
+            <mxPoint x="275" y="342" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prNrV24Wx6QdeM9nP8rq-21" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="prNrV24Wx6QdeM9nP8rq-4" target="prNrV24Wx6QdeM9nP8rq-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="285" y="452" as="sourcePoint" />
+            <mxPoint x="285" y="352" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

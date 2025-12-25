@@ -1,0 +1,182 @@
+Авторизация
+-логин
+-пароль (должен быть захеширован)
+
+Роли пользователей
+-админ (Системный администратор, руководитель ИТ--Создает учетные записи, назначает роли, управляет категориями документов)
+-менеджер (Специалист по госзакупкам--Загружает новые документы (заявки, контракты), обновляет версии, добавляет комментарии)
+-пользователь (юрист бухгалтер--Просматривают, фильтруют, скачивают документы, могут оставлять заметки )
+
+Главное меню
+-документы (подгружать могут только админ и менджер тендеров)
+-поиск
+-журнал действий 
+-пользователи (доступно только админу)
+
+
+
+
+И так вернемся к плану для написания прораммы.
+Авторизация
+-логин
+-пароль (должен быть захеширован  и декодирован в коде) 
+
+Роли пользователей
+-админ (Системный администратор, руководитель ИТ--Создает учетные записи, назначает роли, управляет категориями документов)
+-менеджер (Специалист по госзакупкам--Загружает новые документы (заявки, контракты), обновляет версии, добавляет комментарии)
+-пользователь (юрист бухгалтер--Просматривают, фильтруют, скачивают документы, могут оставлять заметки )
+
+Главное меню
+-документы (подгружать могут только админ и менджер тендеров, смотреть могут все) 
+-поиск
+-журнал действий 
+-пользователи (доступно только админу)
+
+И так в окне Авторизация
+-два поля Логин и Пароль 
+-кнопка вход
+
+Главное меню (если мы зашли под ролью админа)
+-Документы
+--Тут отображаются наши PDF, WORD, Excel документы, кнопки "Подгрузить", "Удалить", "Открыть".
+-Поиск
+--Тут у нас поиск по названию документа или категории 
+-Журнал Действий
+--Тут просто поле со всеми действиями, также кнопка "Очистить"
+-Пользователи 
+--Список пользователей 
+
+
+Главное окно (если мы зашли под ролью редактора)
+-Документы
+--Тут отображаются наши PDF, WORD, Excel документы, кнопки "Подгрузить", "Удалить", "Открыть".
+-Поиск
+--Тут у нас поиск по названию документа или категории 
+-Журнал Действий
+--Тут просто поле со всеми действиями, также кнопка "Очистить"
+
+Главное окно (если мы зашли под ролью пользователя)
+-Документы
+--Тут отображаются наши PDF, WORD, Excel документы, кнопка "Открыть".
+-Поиск
+--Тут у нас поиск по названию документа или категории 
+-Журнал Действий
+--Тут просто поле со всеми действиями, также кнопка "Очистить"
+
+Еще в документах, если выбрать файл, то должен показать комментарий
+Значит напиши код на python строго по этому плану. Мне нужна идеально работающая программа. 
+
+
+если что-то упустил подпраь, выолняй 
+
+
+Почему НЕ стоит делать авто-отслеживание (отслеживание изменеия файла, грубо версия дока +1) 
+
+
+Автоматическое отслеживание изменений файлов требует системных хуков или FileSystemWatcher, что выходит за рамки курсовой работы и снижает переносимость приложения. Поэтому используется явное обновление версии документа пользователем.
+
+
+Сделать:
+-заполнить нормальные данные бд
+-поиск сделать только по категории
+-черный яшик тестировка
+-тз
+-рпз
+
+
+Убрал
+add_document
+ # защита от перезаписи
+            # if os.path.exists(dest_path):
+            #     messagebox.showwarning(
+            #         "Пропуск файла",
+            #         f"Файл {filename} уже существует и будет пропущен"
+            #     )
+            #     continue
+
+
+MainWindow
+# # ===================== Поиск =====================
+    # def setup_search_tab(self):
+    #     Label(self.search_tab, text="Поиск по названию или категории").pack(pady=5)
+    #     self.search_entry = Entry(self.search_tab)
+    #     self.search_entry.pack(pady=5)
+    #     Button(self.search_tab, text="Поиск", command=self.search_documents).pack(pady=5)
+    #     Button(self.search_tab, text="Открыть", command=self.open_document_from_search).pack(pady=5)
+
+    #     self.search_tree = ttk.Treeview(self.search_tab, columns=("ID", "Title", "Category", "Version"), show="headings")
+    #     self.search_tree.heading("ID", text="ID")
+    #     self.search_tree.heading("Title", text="Название")
+    #     self.search_tree.heading("Category", text="Категория")
+    #     self.search_tree.heading("Version", text="Версия")
+    #     self.search_tree.pack(fill=BOTH, expand=True)
+        
+    
+    # def search_documents(self):
+    #     query = self.search_entry.get()
+    #     for row in self.search_tree.get_children():
+    #         self.search_tree.delete(row)
+    #     cur.execute("SELECT id, title, category, version FROM documents WHERE title ILIKE %s OR category ILIKE %s", 
+    #                 (f"%{query}%", f"%{query}%"))
+    #     for doc in cur.fetchall():
+    #         self.search_tree.insert("", END, values=doc)
+
+    # def open_document_from_search(self):
+    #     selected = self.search_tree.selection()
+    #     if not selected:
+    #         messagebox.showwarning("Ошибка", "Выберите документ")
+    #         return
+
+    #     doc_id = self.search_tree.item(selected[0])['values'][0]
+
+    #     cur.execute("SELECT file_path, title FROM documents WHERE id=%s", (doc_id,))
+    #     result = cur.fetchone()
+
+    #     if not result:
+    #         messagebox.showerror("Ошибка", "Документ не найден")
+    #         return
+
+    #     file_path, title = result
+        
+    #     if os.path.exists(file_path):
+    #         os.startfile(file_path)
+    #         log_action(self.user_id, f"Открыл документ '{title}'", doc_id)
+    #         self.refresh_log()
+    #     else:
+    #         messagebox.showerror("Ошибка", "Файл не найден")
+
+
+
+Пароли
+# import psycopg2
+# import bcrypt
+
+# conn = psycopg2.connect(
+#     dbname="docuflow",
+#     user="postgres",
+#     password="kolya777",
+#     host="localhost"
+# )
+# cur = conn.cursor()
+
+# users = [
+#     ("admin1", "admin123", "admin"),
+#     ("manager1", "manager123", "manager"),
+#     ("user1", "user123", "user")
+# ]
+
+# for username, password, role in users:
+#     pw_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
+#     cur.execute(
+#         "INSERT INTO users (username, password_hash, role) VALUES (%s, %s, %s)",
+#         (username, pw_hash, role)
+#     )
+
+# conn.commit()
+# cur.close()
+# conn.close()
+# print("Тестовые пользователи созданы")
+
+
+------------------------------------------------------------------------------
+
